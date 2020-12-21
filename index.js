@@ -29,9 +29,9 @@ const Calculator = {
     }
 }
 
-function actionApplyer(start, finish) {
-    for (let i = 0; i < finish.length; i++) {
-        start = finish[i](start);
+function actionApplyer(start, array) {
+    for (let i = 0; i < array.length; i++) {
+        start = array[i](start);
     }
     return start;
 }
